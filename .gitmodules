@@ -1,0 +1,3 @@
+[submodule "lib/readdy"]
+	path = lib/readdy
+	url = https://github.com/readdy/readdy.git

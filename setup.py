@@ -46,6 +46,7 @@ class CMakeBuild(build_ext):
             "-DCMAKE_PREFIX_PATH={}".format(os.environ['CONDA_PREFIX']),
             "-DCMAKE_INSTALL_PREFIX={}".format(os.environ['CONDA_PREFIX']),
             "-DREADDY_BUILD_SHARED_COMBINED:BOOL=ON",
+            "-DREADDY_INSTALL_HEADERS:BOOL=ON",
             "-DREADDY_CREATE_TEST_TARGET:BOOL=OFF",
             "-GNinja"
         ]
